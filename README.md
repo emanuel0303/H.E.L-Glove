@@ -12,7 +12,6 @@ Use the provided Arduino code to program your Arduino board. This code manages t
 ### Python Code
 Utilize the provided Python code on your computer. Before running the code, ensure you have installed the required libraries (`pyserial` and `twilio`) using pip:
 
-```markdown
 pip install pyserial twilio
 Next, replace the following placeholders in the Python code with your Twilio credentials and recipient phone number:
 
@@ -21,6 +20,7 @@ Next, replace the following placeholders in the Python code with your Twilio cre
 - `recipient_phone_number`: The phone number where you want to receive emergency alerts.
 
 Finally, update the `arduino_port` variable with the appropriate serial port to which your Arduino board is connected.
+
 
 ### Execution
 Once both the Arduino and Python scripts are set up, execute the Python script. It will establish a serial connection with the Arduino board, monitor the glove's button input, and send SMS alerts using Twilio when an emergency signal is received from the glove.
